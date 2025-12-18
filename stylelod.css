@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+div h2 {
+    color: white;
+    margin-top: 100px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    border-right: 2px solid white;
+    animation: h2-text 5s steps(100) forwards infinite, blink 0.8s infinite;
+}
+
+div h3::after {
+    content: "";
+    font-size: 28px;
+    width: 0%;
+    font-weight: bold;
+    border-right: 2px solid white;
+    animation: words steps(1000) 6s infinite, blink 0.8s infinite;
+    animation-delay: 2s;
+}
+
+.btn {
+    width: 50%;
+    margin: 0px 25%;
+}
+
+.container {
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .div1 {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    margin: 10px 9px;
+    animation: div1 2s;
+    animation-delay: 0.6s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid red;
+}
+
+.container .div2 {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    margin: 10px 9px;
+    opacity: 0;
+    animation: div2 2s;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid red;
+}
+
+.container .div3 {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin: 10px 9px;
+    opacity: 0;
+    animation: div3 2s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid red;
+}
+
+.container .div4 {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin: 10px 9px;
+    opacity: 0;
+    animation: div4 2s;
+    animation-delay: 0.9s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid red;
+}
+
+.container .div5 {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin: 10px 9px;
+    opacity: 0;
+    animation: div5 2s;
+    animation-delay: 1.1s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid red;
+}
+
+.container .div6 {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin: 10px 9px;
+    opacity: 0;
+    animation: div6 2s;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid red;
+}
+
+@keyframes h2-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+@keyframes words {
+    0% {
+        content: " Web Develober...";
+        color: blue;
+    }
+
+    50% {
+        content: " Front-End...";
+        color: blue;
+    }
+
+    100% {
+        content: " Back-End...";
+        color: blue;
+    }
+}
+
+@keyframes div1 {
+    0% {
+        /* transform: translateY(-20px); */
+        background-color: blue;
+    }
+
+    100% {
+        /* transform: translateY(20px); */
+        opacity: 1;
+        background-color: white;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes div2 {
+    0% {
+        /* transform: translateY(-20px); */
+        background-color: blue;
+    }
+
+    100% {
+        /* transform: translateY(20px); */
+        opacity: 1;
+        background-color: white;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes div3 {
+    0% {
+        /* transform: translateY(-20px); */
+        background-color: blue;
+    }
+
+    100% {
+        /* transform: translateY(20px); */
+        opacity: 1;
+        background-color: white;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes div4 {
+    0% {
+        /* transform: translateY(-20px); */
+        background-color: blue;
+    }
+
+    100% {
+        /* transform: translateY(20px); */
+        opacity: 1;
+        background-color: white;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes div5 {
+    0% {
+        /* transform: translateY(-20px); */
+        background-color: blue;
+    }
+
+    100% {
+        /* transform: translateY(20px); */
+        opacity: 1;
+        background-color: white;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes div6 {
+    0% {
+        /* transform: translateY(-20px); */
+        /* background-color: blue; */
+    }
+
+    100% {
+        /* transform: translateY(20px); */
+        opacity: 1;
+        background-color: white;
+        transform: rotate(360deg);
+
+    }
+}
